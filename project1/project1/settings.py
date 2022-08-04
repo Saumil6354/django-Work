@@ -14,6 +14,8 @@ from pathlib import Path
 import os
 from site import venv
 
+from sqlalchemy import false
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -25,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-^c7a6a6m=rieb@(u-&%4q7y=njx=c5_i7ojtyu$q^d6*%2j#hk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
